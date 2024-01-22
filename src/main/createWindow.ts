@@ -1,7 +1,7 @@
 import { BrowserWindow } from 'electron';
 import icon from '../renderer/src/assets/cryptoTemplate.png?asset';
 
-function createWindow(): BrowserWindow {
+export function createWindow(): BrowserWindow {
 	// Create the browser window.
 	const mainWindow = new BrowserWindow({
 		width: 250,
@@ -16,5 +16,3 @@ function createWindow(): BrowserWindow {
 
 	return mainWindow;
 }
-
-export default createWindow();
