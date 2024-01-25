@@ -1,7 +1,7 @@
 import { BrowserWindow, Tray } from 'electron';
 
 
-function controlWindow(win: BrowserWindow, tray: Tray) {
+export function controlWindow(win: BrowserWindow, tray: Tray) {
 	function toggle() {
 		if (win.isVisible()) {
 			win.hide();
@@ -32,5 +32,3 @@ function controlWindow(win: BrowserWindow, tray: Tray) {
 
 	return { toggle };
 }
-
-export default controlWindow;

@@ -1,4 +1,9 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
   display: flex;
   flex-direction: column;
   font-family:
@@ -14,11 +19,20 @@ body {
     sans-serif;
   color: #86a5b1;
   background-color: #2f3241;
+} */
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Rajdhani', 'Roboto', sans-serif;
+	min-height: 100vh;
 }
 
 * {
   padding: 0;
   margin: 0;
+	box-sizing: border-box;
 }
 
 ul {

@@ -1,8 +1,8 @@
-
+import { Main } from './components/Main';
 
 function App(): JSX.Element {
 	return (
-		<div className="container"></div>
+		<Main />
 	);
 }
 
