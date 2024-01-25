@@ -7,7 +7,7 @@ export function createWindow(): void {
 	// Create the browser window.
 	const mainWindow = new BrowserWindow({
 		width: 250,
-		height: 310,
+		height: 350,
 		show: false,
 		// frame: false,
 		resizable: false,

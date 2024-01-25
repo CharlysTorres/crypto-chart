@@ -1,11 +1,13 @@
 .main-container {
 	padding: 8px;
 	width: 250px;
-	height: 310px;
+	height: 350px;
 	@apply bg-slate-50 dark:bg-gray-900;
 }
 
-.content {}
+.content {
+	margin-top: 12px;
+}
 
 .wrapper {}
 
@@ -44,3 +46,44 @@
 	font-size: 20px;
 	text-align: center;
 }
+
+.select {
+	width: 100% !important;
+}
+
+.select.hidden {
+	display: none;
+}
+
+.select__control {
+	@apply bg-slate-50 dark:bg-slate-800 !important;
+	/* border: 1px solid var(--input-border-color) !important; */
+	border-radius: 8px !important;
+}
+
+.select__menu {
+	@apply bg-slate-50 dark:bg-slate-800 text-gray-950 dark:text-slate-50 !important;
+}
+
+.select__menu-list {}
+
+.select__option {}
+
+.select__control--is-focused {}
+
+.select__input {
+	@apply bg-slate-50 dark:bg-slate-800 text-gray-950 dark:text-slate-50 !important;
+	box-shadow: none !important;
+	box-sizing: border-box !important; /* To avoid field goes over its container bounds. See: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+	border-radius: 0px !important;
+	border: 0px !important;
+	width: 100% !important;
+}
+
+.select__input input:focus {
+  border: none !important;
+	border-radius: 0px !important;
+	box-shadow: none !important;
+}
+/* THIS ONE PUTS "INPUT TEXT" TO DARK MODE. */
+.select-dark-mode__single-value {}

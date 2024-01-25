@@ -21,6 +21,18 @@
   background-color: #2f3241;
 } */
 
+body::-webkit-scrollbar {
+  width: 0px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  @apply bg-slate-50 dark:bg-gray-900; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply bg-slate-50 dark:bg-gray-900; /* color of the scroll thumb */
+}
+
 body {
 	display: flex;
 	align-items: center;
