@@ -15,7 +15,8 @@
 	width: 100%;
 	height: 110px;
 	border-radius: 5px;
-	background: linear-gradient(90deg, #5a7cdc, #606dde);
+	/* background: linear-gradient(90deg, #5a7cdc, #606dde); */
+	@apply bg-violet-700;
 }
 
 .infos {
@@ -87,3 +88,14 @@
 }
 /* THIS ONE PUTS "INPUT TEXT" TO DARK MODE. */
 .select-dark-mode__single-value {}
+
+.send {
+	width: 54px;
+	height: 36px;
+	display: flex;
+	margin-left: 4px;
+	border-radius: 5px;
+	align-items: center;
+	justify-content: center;
+	@apply bg-violet-700;
+}
